@@ -1,4 +1,4 @@
-const {Discord, Client, Intents} = require('discord.js')
+const Discord = require('discord.js')
 
 module.exports.run = async (prefix, message, content, bot) => {
     const isAdminRole = message.member.roles.cache.some(role => role.name === 'Admin')

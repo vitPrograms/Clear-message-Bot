@@ -39,7 +39,6 @@ bot.on('message', (message) => {
     }
 
     const command = content.shift().slice(prefix.length).toLowerCase()
-
     const cmd = bot.commands.get(command)
 
     if (!cmd) return
